@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="144dp">
+
+        <!-- Favorite Title -->
+        <TextView
+            android:id="@+id/favoriteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Favorite"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="146dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/favoriteTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logoo" />
+
+        <!-- First Image and Name -->
+        <LinearLayout
+            android:id="@+id/firstImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImage"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="250dp"
+                android:layout_height="170dp"
+                android:src="@drawable/a" />
+
+            <Button
+                android:id="@+id/image1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Stadia"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Second Image and Name -->
+        <LinearLayout
+            android:id="@+id/secondImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstImageLayout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="250dp"
+                android:layout_height="170dp"
+                android:src="@drawable/b" />
+
+            <Button
+                android:id="@+id/image2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Korean Palace"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Third Image and Name -->
+        <LinearLayout
+            android:id="@+id/thirdImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondImageLayout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="250dp"
+                android:layout_height="170dp"
+                android:src="@drawable/c" />
+
+            <Button
+                android:id="@+id/image3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Assada"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Fourth Image and Name -->
+        <LinearLayout
+            android:id="@+id/fourthImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thirdImageLayout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="250dp"
+                android:layout_height="170dp"
+                android:src="@drawable/d" />
+
+            <Button
+                android:id="@+id/image4Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="GT radial"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

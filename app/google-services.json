@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595582050209",
+    "project_id": "nyyii-ce9cb",
+    "storage_bucket": "nyyii-ce9cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595582050209:android:a0a4eb4cf94781b3b4f5e0",
+        "android_client_info": {
+          "package_name": "com.example.nyyii"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDojjJBD4z5CrwGgm4b2TlVqJkl-ILbQTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

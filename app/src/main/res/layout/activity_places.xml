@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- SearchView with featured place title -->
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:queryHint="Search for places" />
+
+        <!-- Image centered and clickable -->
+        <ImageView
+            android:id="@+id/featuredImage"
+            android:layout_width="344dp"
+            android:layout_height="192dp"
+            android:layout_below="@id/searchView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/db"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!-- Description text for the featured place -->
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/featuredImage"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="the Tondaligan Beach in Dagupan City is one of the most visited places in the area. Families and barkadas usually find themselves at this beach for timeless bonding and memory-making, with the beach’s vast area a perfect backdrop for tons of Instagram-worthy pictures."
+            android:textSize="18sp" />
+
+        <!-- Title for the "More Places" section -->
+        <TextView
+            android:id="@+id/morePlacesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionText"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="More Places"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- More places section -->
+        <LinearLayout
+            android:id="@+id/morePlacesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/morePlacesTitle"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <!-- Left image for more places -->
+            <LinearLayout
+                android:id="@+id/leftLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Rating for left image -->
+
+                <ImageView
+                    android:id="@+id/leftImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="232dp"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ggg"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <RatingBar
+                    android:id="@+id/leftRating"
+                    android:layout_width="148dp"
+                    android:layout_height="45dp"
+                    android:numStars="3"
+                    android:rating="1"
+                    android:stepSize="0.5"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <!-- Add spacing between left and right images -->
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="match_parent" />
+
+            <!-- Right image for more places -->
+            <LinearLayout
+                android:id="@+id/rightLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rightImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="232dp"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kk"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <!-- Rating for right image -->
+                <RatingBar
+                    android:id="@+id/rightRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:numStars="3"
+                    android:rating="1.2"
+                    android:stepSize="0.5"
+                    android:visibility="visible" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="123dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="-6dp"
+            android:onClick="openFavActivity"
+            android:text="More places" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

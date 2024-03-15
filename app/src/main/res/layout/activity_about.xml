@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Search View -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search for places..." />
+
+        <!-- Image Placeholder -->
+        <ImageView
+            android:id="@+id/placeImage"
+            android:layout_width="317dp"
+            android:layout_height="301dp"
+            android:layout_below="@id/searchView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_main" />
+
+        <!-- Title -->
+
+        <!-- Description -->
+
+        <!-- Button to view Map -->
+
+        <TextView
+            android:id="@+id/placeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/placeImage"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="34dp"
+            android:text="About"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/placeDescription"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/placeTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="16dp"
+            android:text="Travel Guide helps you explore Dagupan with ease! Find the best spots to stay, eat, and visit in this city. Whether you’re a local or a visitor, we’ve got you covered with information about the places you want to explore. Start your Dagupan adventure with us now!
+."
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/Maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="274dp"
+            android:layout_marginBottom="53dp"
+            android:onClick="openFavActivity"
+            android:text="View Maps" />
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="52dp"
+            android:onClick="openFavActivity"
+            android:text="Featured" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
